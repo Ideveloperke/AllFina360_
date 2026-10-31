@@ -167,7 +167,7 @@ docker build -t allfina-ai-service apps/ai-service
 
 Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, coding
 conventions and the pull request checklist, and our [Code of Conduct](CODE_OF_CONDUCT.md). Please
-report security issues privately, not as public issues.
+report security issues privately as described in [SECURITY.md](SECURITY.md), not as public issues.
 
 ## License
 

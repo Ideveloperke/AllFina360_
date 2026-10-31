@@ -22,9 +22,8 @@ Never paste real client data, recordings, transcripts or API keys into an issue.
 
 ## Security issues
 
-Do **not** open a public issue for security vulnerabilities. Contact the maintainer privately
-through their [GitHub profile](https://github.com/Ideveloperke) and allow time for a fix before
-disclosing.
+Do **not** open a public issue for security vulnerabilities. Follow the private reporting process
+in [SECURITY.md](SECURITY.md).
 
 ## Development setup
 
