@@ -6,6 +6,9 @@ are all welcome.
 AllFina is an early MVP, so things move quickly. For anything larger than a small fix, please open
 an issue first so we can agree on the approach before you spend time on it.
 
+This project follows a [Code of Conduct](CODE_OF_CONDUCT.md). By participating, you agree to uphold
+it.
+
 ## Reporting bugs and requesting features
 
 Open a [GitHub issue](https://github.com/Ideveloperke/AllFina360_/issues) and include:
