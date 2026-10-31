@@ -165,16 +165,9 @@ docker build -t allfina-ai-service apps/ai-service
 
 ## Contributing
 
-Issues and pull requests are welcome.
-
-1. Fork the repo and create a branch from `main`.
-2. Make your change, adding tests where it makes sense.
-3. Run `pnpm format`, `pnpm lint`, `pnpm typecheck` and `pnpm test` (CI runs the same checks).
-4. Open a pull request describing what changed and why.
-
-Never commit a real `.env` file or API keys; use `.env.example` for new settings.
-
-To report a security issue, please contact the maintainer privately instead of opening a public issue.
+Issues and pull requests are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for setup, coding
+conventions and the pull request checklist. Please report security issues privately, not as
+public issues.
 
 ## License
 
