@@ -27,5 +27,6 @@ Closes #
 - [ ] Tests were added or updated where it makes sense
 - [ ] New queries are scoped by `firm_id`, and actions on client data write to the audit log
 - [ ] Schema changes include a generated migration (`pnpm db:generate`); no existing migration was edited
+- [ ] Notable changes are added under `Unreleased` in `CHANGELOG.md`
 - [ ] New environment variables are added to `.env.example` with placeholder values
 - [ ] No secrets, real client data, recordings or transcripts are included

@@ -57,7 +57,9 @@ Docker or the locally installed services described in the README.
    - `packages/shared`: Vitest
    - `apps/api`: Jest
    - `apps/ai-service`: pytest (tests must not call real Anthropic or Deepgram APIs)
-5. New environment variables go in `.env.example` with a placeholder value and a comment. Never
+5. For changes users or developers will notice, add a line under `## [Unreleased]` in
+   [CHANGELOG.md](CHANGELOG.md).
+6. New environment variables go in `.env.example` with a placeholder value and a comment. Never
    commit a real `.env` file or secrets.
 
 ## Before you open a pull request
