@@ -1,8 +1,36 @@
-# AllFina
+# AllFina360
+
+[![CI](https://github.com/Ideveloperke/AllFina360_/actions/workflows/ci.yml/badge.svg)](https://github.com/Ideveloperke/AllFina360_/actions/workflows/ci.yml)
+![Node](https://img.shields.io/badge/node-24-339933?logo=node.js&logoColor=white)
+![Python](https://img.shields.io/badge/python-3.12-3776AB?logo=python&logoColor=white)
+![pnpm](https://img.shields.io/badge/pnpm-10-F69220?logo=pnpm&logoColor=white)
 
 An AI meeting assistant for financial advisors. Advisors upload a client meeting recording (or paste
 a transcript), and AllFina produces a summary, action items, a follow-up email draft and compliance
 flags. Every step is recorded in an append-only audit log.
+
+> **Status:** early MVP, under active development. Expect breaking changes; not yet production-ready.
+
+## Features
+
+- **Meeting capture:** upload an audio/video recording or paste a transcript
+- **Transcription:** speaker-labelled transcripts via Deepgram
+- **AI analysis (Claude):** summary, key points, action items, a follow-up email draft and
+  compliance flags, validated against a schema
+- **Client management:** multi-tenant firm workspaces with clients and meeting history
+- **Compliance-minded:** append-only audit log, tenant-scoped queries, short-lived presigned URLs
+  for recordings
+
+## Contents
+
+- [Architecture](#architecture)
+- [Prerequisites](#prerequisites)
+- [Getting started](#getting-started)
+- [Common commands](#common-commands)
+- [Security and compliance](#security-and-compliance)
+- [Docker images](#docker-images)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
 
 ## Architecture
 
@@ -132,3 +160,20 @@ docker build -t allfina-ai-service apps/ai-service
 - Semantic search across meetings with pgvector (`document_chunks` table is ready)
 - Team invitations and role-based permissions (owner, advisor, assistant, compliance)
 - SSO/SAML, MFA, Postgres row-level security, Sentry + OpenTelemetry + Langfuse
+
+## Contributing
+
+Issues and pull requests are welcome.
+
+1. Fork the repo and create a branch from `main`.
+2. Make your change, adding tests where it makes sense.
+3. Run `pnpm format`, `pnpm lint`, `pnpm typecheck` and `pnpm test` (CI runs the same checks).
+4. Open a pull request describing what changed and why.
+
+Never commit a real `.env` file or API keys; use `.env.example` for new settings.
+
+To report a security issue, please contact the maintainer privately instead of opening a public issue.
+
+## License
+
+No license has been chosen yet, so all rights are reserved by the author for now.
