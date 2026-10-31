@@ -4,6 +4,7 @@
 ![Node](https://img.shields.io/badge/node-24-339933?logo=node.js&logoColor=white)
 ![Python](https://img.shields.io/badge/python-3.12-3776AB?logo=python&logoColor=white)
 ![pnpm](https://img.shields.io/badge/pnpm-10-F69220?logo=pnpm&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 An AI meeting assistant for financial advisors. Advisors upload a client meeting recording (or paste
 a transcript), and AllFina produces a summary, action items, a follow-up email draft and compliance
@@ -31,6 +32,7 @@ flags. Every step is recorded in an append-only audit log.
 - [Docker images](#docker-images)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
+- [License](#license)
 
 ## Architecture
 
@@ -176,4 +178,4 @@ To report a security issue, please contact the maintainer privately instead of o
 
 ## License
 
-No license has been chosen yet, so all rights are reserved by the author for now.
+[MIT](LICENSE) © 2026 David Mule
