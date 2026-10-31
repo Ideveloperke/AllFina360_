@@ -1,0 +1,57 @@
+name: Feature request
+description: Suggest an idea or improvement
+title: '[Feature]: '
+labels: ['enhancement']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Please check the [Roadmap](https://github.com/Ideveloperke/AllFina360_#roadmap) and existing issues first.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem would this solve? What are you trying to do today?
+      placeholder: As an advisor, I spend too long ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: Who does this help?
+      multiple: true
+      options:
+        - Advisors
+        - Assistants / support staff
+        - Compliance staff
+        - Firm admins
+        - Developers / contributors
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: How you imagine it working. Optional.
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Other approaches or workarounds you've thought about. Optional.
+
+  - type: textarea
+    id: compliance
+    attributes:
+      label: Compliance or privacy considerations
+      description: Does this touch client data, recordings, the audit log or regulatory requirements? Optional.
+
+  - type: checkboxes
+    id: contribute
+    attributes:
+      label: Contribution
+      options:
+        - label: I'd like to work on this myself

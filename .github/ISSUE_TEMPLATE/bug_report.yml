@@ -1,0 +1,81 @@
+name: Bug report
+description: Something isn't working as expected
+title: '[Bug]: '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug.
+
+        **Security vulnerabilities must not be reported here.** Follow [SECURITY.md](https://github.com/Ideveloperke/AllFina360_/blob/main/SECURITY.md) instead.
+
+        Never paste real client data, recordings, transcripts or API keys into an issue.
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      multiple: true
+      options:
+        - Web app (apps/web)
+        - API (apps/api)
+        - AI service (apps/ai-service)
+        - Database / migrations (packages/db)
+        - Shared types (packages/shared)
+        - Local dev setup / tooling
+        - Docs
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See error ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Relevant error output or screenshots. Remove any secrets or personal data first.
+      render: shell
+
+  - type: input
+    id: commit
+    attributes:
+      label: Commit
+      description: The commit you're running (`git rev-parse --short HEAD`).
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      value: |
+        - OS:
+        - Node.js version:
+        - Python version:
+        - Browser (for web app issues):
+        - Services: Docker Compose / local services (Windows without Docker)
